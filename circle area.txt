@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+      double pi = 3.1459;
+      double radius;
+      double area;
+
+   printf("\nEnter the radius of a circle: ");
+
+   scanf("%lf",&radius);
+
+   area = pi* radius * radius;
+
+   printf("\nthe area is: %.3lf", area);
+
+     return 0;
+
+}
