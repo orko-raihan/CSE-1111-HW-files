@@ -7,7 +7,7 @@ int main(){
    double num2;
    double result;
 
-   printf("\nEnter an operator [+,-, *, / %]: ");
+   printf("\nEnter an operator [+,-, *, /]: ");
    scanf("%c", &operator);
 
  if (operator >= 'a' && operator <= 'z')
