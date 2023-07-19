@@ -10,7 +10,7 @@ int main(){
    printf("\nEnter an operator [+,-, *, / %]: ");
    scanf("%c", &operator);
 
- if ((operator >= 'a' && operator <= 'z'))
+ if (operator >= 'a' && operator <= 'z')
         printf("%c is an alphabet and not a valid operator.", operator);
     else
    printf("Enter number 1: ");
