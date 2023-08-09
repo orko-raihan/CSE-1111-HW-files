@@ -1,32 +1,27 @@
-HW of cse 1111
-include <stdio.h> #include <stdlib.h
+#include <stdio.h>
 
-#include <time.h
+#include <stdlib.h>
 
-int main()
+#include <time.h>
 
-stand(time(NULL)) // Send the random number generator with the current time int secretumber zand() 100 1: // Generate a random number between 1 and 100 int guess, attempts-01
+int main() {
 
-printf("Welcome to the Number Guessing Game!\n") do
+srand(time (NULL)); // Seed the random number gene
 
-printf("Enter your goes 1-100): "
+:
 
-scant("d", guess):
+int secretNumber = rand() % 100+ 1; // Generate int guess, attempts = 0; printf("Welcome to the Number Guessing Game!\n");
 
-attempt:
+do ( printf("Enter your guess (1-100): ");
 
-if (guess <secretfumber) {
+scanf("%d", &guess); attempts++;
 
-printf("Try higher.\n"); else if (guess secretumhers
+if (guess < secretNumber) {
 
-printf("Try lower. In
+printf("Try higher.\n");
 
-else (
+} else if (guess > secretNumber) { printf("Try lower.\n");
 
-printf("Congratulations! You guessed the secret number ad in ad attempte. \n", secretumber, attempts):
+} else { printf("Congratulations! You guessed the break;
 
-break
-
-1 while (1)
-
-return 0:
+} while (1); return 0;
