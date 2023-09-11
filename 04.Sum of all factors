@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int num, sum = 0;
+
+    // Input the number
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Calculate the sum of factors
+    for (int i = 1; i <= num; i++) {
+        if (num % i == 0) {
+            sum += i;
+        }
+    }
+
+    // Display the result
+    printf("The sum of factors of %d is %d\n", num, sum);
+
+    return 0;
+}
