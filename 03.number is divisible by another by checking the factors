@@ -2,21 +2,18 @@
 
 int main() {
     int number1, number2;
-    int isDivisible = 1;  // Assume it's divisible until proven otherwise
+    int isDivisible = 1;  
 
-    // Input two numbers
     printf("Enter two numbers: ");
     scanf("%d %d", &number1, &number2);
 
-    // Check if number1 is divisible by number2
     for (int i = 1; i <= number1; i++) {
         if (number1 % i == 0 && number2 == i) {
-            isDivisible = 0; // If we find a factor, it's not divisible
-            break;           // No need to continue checking
+            isDivisible = 0; 
+            break;        
         }
     }
 
-    // Print the result
     if (isDivisible) {
         printf("%d is divisible by %d\n", number1, number2);
     } else {
