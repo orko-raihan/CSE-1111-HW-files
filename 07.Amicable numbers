@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int sum_of_factors(int n) {
-    int sum = 1; // Start with 1 since every number is divisible by 1
+    int sum = 1; 
 
     for (int i = 2; i * i <= n; i++) {
         if (n % i == 0) {
